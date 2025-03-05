@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../CSS/Gernal.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/pages/footer.css">
+    <link rel="stylesheet" href="/CSS/pages/Cart.css">
+    <link rel="shortcut icon" href="/Pictures/bag-shopping-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style=" height:100vh; display: grid; grid-template-rows:auto 1fr auto; align-items:center">
+    <header class="flex ">
+        <a href="/" class="logo">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span style="font-weight: bold;"> SP</span>
+          <p style="letter-spacing: 0.6px;">Shopping</p>
+        </div>
+        <div class="links">
+          <a style="position: relative;" class="Cart" href="">
+            <i class="fa-solid fa-cart-shopping"></i>
+            $0.00
+            <span class="products-number"></span>
+          </a>
+          <a class="Sign-in" href="./signin.html">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            $Sign in
+          </a>
+          <a class="Register" href="./register.html">
+            <i class="fa-solid fa-user-plus"></i>
+            Register
+          </a>
+        </div>
+
+      </header>
+    
+   <div>
+     <main style="text-align: center;">
+      <section class="cart ">
+        <article class="product flex">
+          <button>
+            <i class="fa-solid fa-trash-can"></i>
+          </button>
+          <p class="price">$150</p>
+          <div class="flex" style="margin-right: 1rem;">
+            <button class="decrease">-</button>
+            <div class="quantity flex">5</div>
+            <button class="increase">+</button>
+          </div>
+          <p class="title">Product Title</p>
+        <img style="border-radius: 0.21rem;"
+        width="70"
+        height="70"
+        src="/Pictures/1.png" 
+        alt="">
+        </article>
+
+        <article class="product flex">
+          <button>
+            <i class="fa-solid fa-trash-can"></i>
+          </button>
+          <p class="price">$150</p>
+          <div class="flex" style="margin-right: 1rem;">
+            <button class="decrease">-</button>
+            <div class="quantity flex">5</div>
+            <button class="increase">+</button>
+          </div>
+          <p class="title">Product Title</p>
+        <img style="border-radius: 0.21rem;"
+        width="70"
+        height="70"
+        src="/Pictures/3.webp" 
+        alt="">
+        </article>
+
+        <article class="product flex">
+          <button>
+            <i class="fa-solid fa-trash-can"></i>
+          </button>
+          <p class="price">$150</p>
+          <div class="flex" style="margin-right: 1rem;">
+            <button class="decrease">-</button>
+            <div class="quantity flex">5</div>
+            <button class="increase">+</button>
+          </div>
+          <p class="title">Product Title</p>
+        <img style="border-radius: 0.21rem;"
+        width="70"
+        height="70"
+        src="/Pictures/8.png" 
+        alt="">
+        </article>
+      </section>
+      <button class="clear">
+        <i
+        style="color: white; margin-right: 0.2rem"
+        class="fa-solid fa-trash-can icon" 
+        >
+        </i>
+        Clear Cart
+      </button>
+      <section class="summary">
+        <h1>Cart Summary</h1>
+        <div class="flex">
+          <p class="subtotal">subtotal</p>
+          <p>$1867</p>
+        </div>
+          <button disabled class="checkout">CHECKOUT</button>
+          <a href="./signin.html">PLease sign in to continue</a>
+      </section>
+     </main>
+   </div>
+      <footer>
+        Designed and developed by
+        <span>Mohamed Ebrahim</span>
+        &copy 2025.
+       </footer>
+</body>
+</html>

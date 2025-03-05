@@ -1,0 +1,109 @@
+header.flex{
+    background-color: var(--footerbg);
+    color:#fff;
+    & .fa-solid{
+        color: white;
+        padding-block: 0.5rem;
+    }
+
+    & .logo .fa-solid{
+        font-size: 1.5rem;
+    }
+
+    & .Sign-in:hover,
+    & .Register:hover {
+        border: 1px solid rgb(152, 154, 189);
+        padding: 0.5rem 1.1rem;
+    }
+    & .Cart:hover {
+        border: 1px solid rgb(152, 154, 189);
+        padding: 0.5rem 1.1rem;
+    }
+
+    & .logo:hover{
+        scale: 0.95;
+    }
+}
+
+
+
+
+section.cart article.flex {
+ background-color: white;
+ border-top: 2px solid var(--blue-button);
+ justify-content: space-between;
+ max-width: 450px;
+ margin-block: 0.8rem ;
+ margin-inline: auto;
+ font-weight: bold;
+ border-radius: 4px;
+ box-shadow: rgba(0 ,0 ,0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0 ,0 ,0, 0.12) 0px 1px 3px 0px;
+
+  & .fa-trash-can{
+    color: rgb(244, 112, 112);
+    margin-left: 1rem;
+  }
+   & button.decrease{
+    color: var(--blue-button);
+    font-size: 1.4rem;
+   }
+   & .quantity{
+    background-color: var(--blue-button);
+    color: white;
+    font-size: 0.7rem;
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    justify-content: center;
+    margin-inline: 0.4rem ;
+   }
+   & button.increase{
+    color: var(--blue-button);
+    font-size: 1.3rem;
+   }
+}
+
+
+button.clear{
+  background-color: rgb(250, 109, 112);
+  color: white;
+  margin-top: 1rem;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 0.8rem;
+}
+
+
+section.summary{
+  background-color: white;
+  box-shadow: rgba(0 ,0 ,0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0 ,0 ,0, 0.12) 0px 1px 3px 0px;
+  width: 230px;
+  margin-inline: auto;
+  margin-top: 2.6rem;
+  border-radius: 4px;
+
+  & h1{
+    font-size: 1.1rem;
+    padding-block: 0.4rem;
+    border-bottom: 2px solid rgba(0 ,0 ,0, 0.12);
+  }
+   & div.flex{
+    padding-inline: 0.5rem;
+    margin-block: 0.6rem;
+    justify-content: space-between;
+   }
+   & button.checkout{
+    width: 100%;
+    background-color: var(--blue-button);
+    color: white;
+    padding-block: 0.5rem;
+    font-size: 0.9rem;
+    font-weight:500;
+   }
+   & a{
+    padding-block: 0.5rem;
+    color: red;
+    font-size: 0.8rem;
+   }
+
+}

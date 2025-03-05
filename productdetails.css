@@ -1,0 +1,79 @@
+header.flex{
+    background-color: var(--footerbg);
+    color:#fff;
+    & .fa-solid{
+        color: white;
+        padding-block: 0.5rem;
+    }
+
+    & .logo .fa-solid{
+        font-size: 1.5rem;
+    }
+
+    & .Sign-in:hover,
+    & .Register:hover {
+        border: 1px solid rgb(152, 154, 189);
+        padding: 0.5rem 1.1rem;
+    }
+    & .Cart:hover {
+        border: 1px solid rgb(152, 154, 189);
+        padding: 0.5rem 1.1rem;
+    }
+
+    & .logo:hover{
+        scale: 0.95;
+    }
+}
+
+
+main.flex{
+    max-width: 810px;
+    box-shadow: rgba(0 ,0 ,0, 0.2) 0px -1px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0 ,0 ,0, 0.12) 0px 1px 3px 0px;
+    border-radius: 0.4rem;
+    background-color: white;
+
+
+    & img{
+        box-shadow: rgba(0 ,0 ,0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0 ,0 ,0, 0.12) 0px 1px 3px 0px;
+        width: 95%;
+        border-radius: 0.4rem;
+    }
+  & .price{
+    font-size: 1.22rem;
+    font-weight: bold;
+    color: red;
+  }
+  & .product-details{
+    margin-inline: 1.2rem;
+  }
+  & .description{
+    text-align: left;
+    margin-block: 1.1rem;
+    line-height: 1.4rem;
+  }
+  & .add-to-cart{
+    background-color: var(--blue-button);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 5px;
+     gap: 0.3rem;
+     font-size: 0.9rem;
+  }
+& .fa-cart-plus{
+    color: white;
+}
+}
+
+@media (width < 800px) {
+    main.flex{
+        flex-wrap: wrap;
+        & img{
+            margin-inline: auto;
+            width: 255px;
+        }
+        .product-details{
+            margin-top: 2.4rem;
+            margin-bottom: 1.4rem;
+        }
+    }
+}
